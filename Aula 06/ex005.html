@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de DOM </title>
+    <style>
+        body{
+            background-color: rgb(174, 200, 250);
+            color: rgb(13, 6, 105);
+            font-size: 18px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos em DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>aprendendo a usar o <Strong>DOM</Strong> em JavaScript</p>
+    <div class="paragrafo">Selecionando paragrafo em Js por name</div>
+    <div id="msg">Clique em min</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        //window.document.write(window.navigator.appName)
+       p1.style.color = 'red'
+        document.write(p1.innerHTML)
+        var d = window.document.getElementById('msg')
+       // d.style.background = 'pink'
+        //d.innerText = 'ja Cliquei'
+        d.style.color = 'yellow'
+        //var n = window.getElementsByTagName('paragrafo')
+        var n = document.querySelector('div.paragrafo')
+       // window.document.write(n.innerHTML)
+        </script>
+</body>
+</html>
